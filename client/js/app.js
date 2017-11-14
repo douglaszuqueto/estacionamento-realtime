@@ -15,7 +15,7 @@ window.onload = () => {
     'Accept': 'application/json',
     'Content-Type': 'application/json'
   };
-  fetch('http://192.168.1.75:3000/vagas', {headers})
+  fetch('http://127.0.0.1:3000/vagas', {headers})
     .then((response) => response.json())
     .then((data) => makeVagas(data))
     .catch((err) => console.log(err));
